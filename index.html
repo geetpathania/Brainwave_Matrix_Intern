@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Your Fitness Journey Starts Here</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">FitLife</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Welcome to FitLife</h1>
+            <p>Transform your body and mind with our personalized fitness programs.</p>
+            <button class="cta-button" onclick="scrollToSignup()">Join Now</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Personalized Plans</h3>
+                <p>Custom workout and diet plans tailored to your goals.</p>
+            </div>
+            <div class="card">
+                <h3>Expert Trainers</h3>
+                <p>Access to certified fitness trainers and nutritionists.</p>
+            </div>
+            <div class="card">
+                <h3>24/7 Support</h3>
+                <p>Get support anytime with our dedicated help center.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Members Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"FitLife has changed my life! The personalized plans are fantastic."</p>
+                <h4>- Alex Volkov</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The trainers are very supportive and the program is easy to follow."</p>
+                <h4>- Geetanjli Pathania</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup" id="signup">
+        <h2>Sign Up for Your Free Trial</h2>
+        <form id="signupForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="goals">Your Fitness Goals:</label>
+            <textarea id="goals" name="goals" required></textarea>
+            
+            <button type="submit">Get Started</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 FitLife. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
